@@ -10,4 +10,7 @@ $(document).ready(function() {
  */
 function initializePage() {
 	// your code here
+	$(".project button.likeBtn").click(function(e){
+		ga("send", "event", "like", "click");
+	});
 }
